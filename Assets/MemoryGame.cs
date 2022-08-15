@@ -13,26 +13,29 @@ public class MemoryGame : MonoBehaviour
     private Card selectOne;
     private Card selectTwo;
     private double selectTime;
+    //private deployCards deployCards;
 
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
-        
-        cards = transform.GetComponentsInChildren<Card>();
 
+        //cards = transform.GetComponentsInChildren<Card>();
 
-        int n = 0;
-        Shuffle(cards);
+        //deployCards = new deployCards();
+        //deployCards.spawnCard();
 
-        for (int m=0; m<cards.Length/2; ++m){
+        //int n = 0;
+        //Shuffle(cards);
 
-            string suit = GetRandomFromArray(kCardSuit);
-            string rank = GetRandomFromArray(kCardRank);
+        //for (int m=0; m<cards.Length/2; ++m){
 
-            cards[n++].SetSuitAndRank(suit, rank);
-            cards[n++].SetSuitAndRank(suit, rank);
-        }
+        //    string suit = GetRandomFromArray(kCardSuit);
+        //    string rank = GetRandomFromArray(kCardRank);
+
+        //    cards[n++].SetSuitAndRank(suit, rank);
+        //    cards[n++].SetSuitAndRank(suit, rank);
+        //}
     }
 
     private void Shuffle<T>(T[] array){
